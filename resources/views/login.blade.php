@@ -27,7 +27,9 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-bold my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                                        <form method="POST">
+                                            <!--Enviamos token-->
+                                            @csrf
                                             <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Usuario</label><input class="form-control py-4" id="inputEmailAddress" name="usuario" type="text" placeholder="Enter email address" /></div>
                                             <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" name="password" type="password" placeholder="Enter password" /></div>
                                             <div class="form-group">
