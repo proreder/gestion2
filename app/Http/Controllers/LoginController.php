@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\LoginModel;
+use App\Models\UsuarioModel;
 
 class LoginController extends Controller
 {
    public function validar(){
-    $login=Request();
+    $login=Request()->only('usuario', 'password');
     dump($login);
    }
     
