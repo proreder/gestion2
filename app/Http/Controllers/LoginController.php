@@ -8,7 +8,7 @@ use App\Models\UsuarioModel;
 class LoginController extends Controller
 {
    public function validar(){
-    $login=Request()->only('usuario', 'password');
+    $login=Request()->only('usuario', 'clave');
     dump($login);
    }
     
