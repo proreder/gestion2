@@ -18,17 +18,18 @@
         <script src="{{ asset('public/js/scripts.js')}}"></script>
 	</head>
     <body class="bg-primary">
+    
         <div class="box">
-            <form method="POST" autocomplete="off">
+            <form method="POST" autocomplete="off" onsubmit="return validacion()>
                 @csrf
                 <h2>Iniciar sesión</h2>
                 <div class="inputBox">
-                    <input type="text" name="usuario" required>
+                    <input type="text" name="usuario" id="usuario" required>
                     <span>Usuario</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" name="clave" required>
+                    <input type="password" name="clave" id="clave" required>
                     <span>Clave</span>
                     <i></i>
                 </div>

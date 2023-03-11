@@ -20,3 +20,17 @@
         $("body").toggleClass("sb-sidenav-toggled");
     });
 })(jQuery);
+
+function validacion() {
+    usuario= document.getElementById("usuario").value;
+    if (usuario==null || usuario.legth<5) {
+      // Si no se cumple la condicion...
+      alert('[ERROR] El campo debe tener un valor de más de 5 caracteres');
+      return false;
+    }
+   
+  
+    // Si el script ha llegado a este punto, todas las condiciones
+    // se han cumplido, por lo que se devuelve el valor true
+    return true;
+  }
